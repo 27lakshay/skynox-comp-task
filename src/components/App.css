@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins";
+  /* outline: 1px solid green; */
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 90vw;
+  margin: 20vh 0;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .footer-col {
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.footer-col .col-title {
+  text-transform: uppercase;
+  font: normal 400 1.2rem/100% Poppins;
+  text-align: left;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+}
+
+.footer-col .footer-btn {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font: normal 500 1rem/100% Poppins;
+  text-align: left;
+  border-radius: 10px;
+  display: block;
+  height: 3rem;
+  border-radius: 20px;
+  padding: 1rem 1rem;
+  margin: 0.5rem 0;
+}
+
+.footer-btn:hover {
+  background-image: linear-gradient(to bottom right, #fce7f3 51%,#dbeafe 100%);
+}
+
+.footer .footer-card {
+  cursor: pointer;
+  max-width: 380px;
+  height: 180px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 0.5rem 0;
+}
+
+.footer-card:hover{
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.footer-card .footer-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1em;
+}
+.footer-card-text > h4 {
+  font: normal 600 1.5rem/1.2em Poppins;
+  margin-bottom: 0.5rem;
+  word-break: normal;
+}
+
+.footer-card-text > span {
+  font: normal 500 1rem/1em Poppins;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-card .footer-card-image {
+  padding: 1em;
+}
+.footer-card .footer-card-image > img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.3);
+  min-width: 80px;
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer > :nth-child(3) {
+    flex-direction: column;
+  }
+
+  .footer .card-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px)  {
+  
+  .footer .card-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    justify-content: flex-start;
+  }
+} 
